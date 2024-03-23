@@ -15,6 +15,7 @@ class AuthoriizdView(LoginRequiredMixin, TemplateView):
     template_name = 'home/authorized.html'
     login_url = '/sujan'
 
+
 ### normal views set ##
 # def home(request):
 #     # return HttpResponse('Hello, World')
