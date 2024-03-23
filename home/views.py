@@ -7,6 +7,6 @@ def home(request):
     # return HttpResponse('Hello, World')
     return render(request, 'home/welcome.html',{'today': datetime.today()})
 
-@login_required(login_url='/admin')
+@login_required(login_url='/admin') #route the authorized page to Admin login
 def authorized(request):
     return render(request, 'home/authorized.html', {})
