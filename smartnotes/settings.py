@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     
-    #apps
-    'home'
+    #apps //adding new models
+    'home',
+    'notes'
 ]
 
 MIDDLEWARE = [
