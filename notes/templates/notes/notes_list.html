@@ -1,6 +1,16 @@
-{% load static %}
+{% extends "base.html" %}
 
-<html>
+{% block content %}
+    <h1> These are the notes: </h>
+    
+        <ul>
+            {% for note in notes %}
+                <li class="note-li" > {{note.title}}</li>
+            {% endfor %}
+        </ul>
+{% endblock %}
+
+{% comment %} <html>
     <head>
         <link rel = "stylesheet" type = "text/css" href = "{%static 'css/style.css' %}"/>
     </head>
@@ -12,4 +22,4 @@
             {% endfor %}
         </ul>
 
-</html>
+</html> {% endcomment %}
