@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
 from django.contrib.auth.decorators import login_required
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView #vlass base view
 from django.contrib.auth.mixins import LoginRequiredMixin #for authozation login
 
 ##Class Base Views
@@ -14,6 +14,8 @@ class HomeView(TemplateView):
 class AuthoriizdView(LoginRequiredMixin, TemplateView):
     template_name = 'home/authorized.html'
     login_url = '/sujan'
+
+
 
 
 ### normal views set ##
