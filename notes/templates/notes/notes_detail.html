@@ -6,11 +6,14 @@
     <p>{{note.text}}</p>
 </div>
 
+<a href = "{% url 'notes.list'%}" class="btn btn-secondary my-5">Back</a>
+<a href = "{% url 'notes.update' pk=note.id %}" class="btn btn-secondary">Edit</a>
+<a href = "{% url 'notes.delete' pk=note.id %}" class="btn btn-danger">Delete</a>
+
 {% endblock %}
 
 {% comment %} 
 <html>
     <h1> {{note.title}}</h>
-    
     <p>{{note.text}}</p>
 </html> {% endcomment %}
