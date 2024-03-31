@@ -4,6 +4,7 @@ from datetime import datetime
 from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView #vlass base view
 from django.contrib.auth.mixins import LoginRequiredMixin #for authozation login
+from django.contrib.auth.views import LoginView, LogoutView
 
 ##Class Base Views
 
@@ -15,6 +16,11 @@ class AuthoriizdView(LoginRequiredMixin, TemplateView):
     template_name = 'home/authorized.html'
     login_url = '/sujan'
 
+class LoginInterfaceView(LoginView):
+    template_name = 'home/login.html'
+
+class LogoutInterfaceView(LogoutView):
+    template_name = 'home/logout.html'
 
 
 
