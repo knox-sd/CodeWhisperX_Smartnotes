@@ -5,7 +5,7 @@
 {% comment %} <form action = "{% url 'notes.new' %}" method = 'POST'>{% csrf_token %} {% endcomment %}
 <form method = 'POST'>{% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="btn btn-primary my-5">Submit</button>
+    <button type="submit" class="btn btn-primary my-3">Submit</button>
 </form>
 
 {% if form.errors %}

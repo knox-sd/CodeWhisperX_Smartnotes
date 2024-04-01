@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     
     #apps //adding new models
     'home',
-    'notes'
+    'notes',
 ]
 
 MIDDLEWARE = [
